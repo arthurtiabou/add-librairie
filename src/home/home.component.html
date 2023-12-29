@@ -1,0 +1,16 @@
+<div class="box" *ngIf="choix">
+  Je suis une div
+</div>
+
+<button *ngIf="choix"  (click)="paragraphe()">Off</button>
+<button *ngIf="!choix" (click)="paragraphe()">On</button>
+
+<ul>
+  <li *ngFor="let item of ['bananes','ananas','oranges','pamplemousses']"> {{item}}</li>
+</ul>
+
+<div [ngClass]="{'red':error,'green':!error}" [ngStyle]="{
+  'backgroundColor':'black'
+}">
+  Bonjour le monde !!!
+</div>
